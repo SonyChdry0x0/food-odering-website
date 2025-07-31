@@ -1,39 +1,62 @@
-// script.js
-
 // Hide loader after page load
 window.addEventListener('load', function () {
-  document.getElementById("loader").style.display = "none";
+  const loader = document.getElementById("loader");
+  if (loader) loader.style.display = "none";
 });
 
 // Toggle navigation bar on mobile
-document.getElementById('menu-bars').addEventListener('click', () => {
-  document.getElementById('menu-bars').classList.toggle('fa-times');
-  document.querySelector('.navbar').classList.toggle('active');
-});
+const menuBars = document.getElementById('menu-bars');
+const navbar = document.querySelector('.navbar');
+
+if (menuBars && navbar) {
+  menuBars.addEventListener('click', () => {
+    menuBars.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+  });
+}
 
 // Toggle search bar
-document.getElementById('search-icon').addEventListener('click', () => {
-  document.getElementById('search-form').classList.toggle('active');
-});
+const searchIcon = document.getElementById('search-icon');
+const searchForm = document.getElementById('search-form');
+const searchClose = document.getElementById('close1');
 
-// Close search bar
-document.getElementById('close1').addEventListener('click', () => {
-  document.getElementById('search-form').classList.remove('active');
-});
+if (searchIcon && searchForm) {
+  searchIcon.addEventListener('click', () => {
+    searchForm.classList.toggle('active');
+    // Focus input on open
+    if (searchForm.classList.contains('active')) {
+      document.getElementById('search-box').focus();
+    }
+  });
+}
+
+if (searchClose && searchForm) {
+  searchClose.addEventListener('click', () => {
+    searchForm.classList.remove('active');
+  });
+}
 
 // Open About section
 function openAbout() {
-  document.getElementById("about").style.width = "100%";
+  const about = document.getElementById("about");
+  if (about) {
+    about.style.width = "100%";
+    about.setAttribute('aria-hidden', 'false');
+  }
 }
 window.openAbout = openAbout;
 
 // Close About section
 function closeNav() {
-  document.getElementById("about").style.width = "0%";
+  const about = document.getElementById("about");
+  if (about) {
+    about.style.width = "0%";
+    about.setAttribute('aria-hidden', 'true');
+  }
 }
 window.closeNav = closeNav;
 
-// Add to Cart functionality
+// Add to Cart functionality with alert
 document.querySelectorAll('.add-to-cart').forEach(button => {
   button.addEventListener('click', () => {
     alert("Item added to cart!");
