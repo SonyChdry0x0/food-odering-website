@@ -29,12 +29,15 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover {
   background: orchid;
 }
-
 body {
-  background-color: lightyellow;
-  color: orange;
+  background: linear-gradient(145deg, #fff7e6, #f0d6a0);
+  color: #b75500;
+  font-family: 'Host Grotesk', 'Geist', 'Sansita', sans-serif;
   line-height: 1.5;
+  /* add a little perspective for 3D child elements */
+  perspective: 1000px;
 }
+
 
 /* Preloader */
 .loader-container {
@@ -50,50 +53,61 @@ body {
   z-index: 1000;
 }
 
-/* Header */
+
+/* Header with soft shadow and slight 3D lift */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background: lightblue;
-  color: grey;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  padding: 20px 40px;
+  background: #d0c6a5;
+  color: #4a3f2f;
+  border-radius: 15px;
+  box-shadow:
+    8px 8px 15px #b3a77c,
+    -8px -8px 15px #f5f0d4;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+header:hover {
+  transform: translateZ(20px) rotateX(2deg);
 }
 
 header .logo {
-  font-size: 2rem;
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-header.logo i {
-  color: orange;
+  font-size: 2.5rem;
+  color: #553300;
+  font-weight: 900;
+  text-shadow: 2px 2px 6px #ac7a00;
+  cursor: default;
 }
 
 header .navbar a {
-  color: black;
+  color: #5a472a;
   text-decoration: none;
-  margin: 0 15px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  margin: 0 18px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #f7e6b3, #c9b46f);
+  box-shadow:
+    3px 3px 6px #b7a553,
+    -3px -3px 6px #fff3a1;
+  transition: all 0.4s ease;
+  display: inline-block;
 }
 
 header .navbar a.active,
 header .navbar a:hover {
-  color: black;
-  background: orange;
-  transform: rotate(180deg);
-  border-radius: 4px;
-  padding: 3px 6px;
+  color: #fff;
+  background: linear-gradient(145deg, #c9a94a, #e6ba22);
+  box-shadow:
+    inset 2px 2px 5px #8b6d1e,
+    inset -2px -2px 5px #ffe14a;
+  transform: translateZ(10px) scale(1.05);
 }
+
 
 header .icons i,
 header .icons a {
@@ -191,38 +205,42 @@ header .icons a {
   border-radius: 4px;
 }
 
+/* Special items with layered shadow and hover pop */
 .special-item {
-  text-align: center;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  flex: 0 0 auto;
-  width: 140px;
+  background: linear-gradient(145deg, #fffbe2, #c7b880);
+  border-radius: 20px;
+  padding: 12px 15px;
+  box-shadow:
+    8px 8px 15px #c6bb7d,
+    -8px -8px 15px #fffdd0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  width: 140px;
+  cursor: pointer;
 }
 
-.special-item a {
-  text-decoration: none;
-  color: #333;
-  flex-shrink: 0;
+.special-item:hover {
+  transform: translateZ(20px) scale(1.05) rotateX(4deg);
+  box-shadow:
+    15px 15px 20px #a6985d,
+    -15px -15px 20px #ffffc7;
 }
 
+/* Images with subtle 3D shadow */
 .special-item img {
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 12px;
+  box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.15),
+    -4px -4px 10px rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s ease;
 }
 
 .special-item img:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
+  transform: translateZ(15px) scale(1.1);
 }
-
 .special-item h5 {
   margin-top: 5px;
   font-size: 1.1rem;
@@ -231,23 +249,28 @@ header .icons a {
 }
 
 .add-to-cart {
-  background-color: #28a745; /* Green */
-  color: white;
-  padding: 8px 12px;
+  background: linear-gradient(145deg, #85c47a, #4b7c38);
+  color: #f3f9f1;
+  padding: 10px 18px;
+  border-radius: 15px;
+  font-weight: 900;
   border: none;
-  border-radius: 5px;
-  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  flex-shrink: 0;
+  box-shadow:
+    6px 6px 8px #3a5a24,
+    -6px -6px 8px #a6e380;
+  transition: all 0.3s ease;
 }
 
 .add-to-cart:hover,
 .add-to-cart:focus {
-  background-color: #218838;
+  background: linear-gradient(145deg, #4b7c38, #2c4e1a);
+  box-shadow:
+    inset 4px 4px 6px #224217,
+    inset -4px -4px 6px #72c13f;
+  transform: translateZ(15px) scale(1.1);
   outline: none;
 }
-
 /* Restaurant Section */
 .Khaja {
   padding: 40px 20px;
@@ -260,21 +283,22 @@ header .icons a {
   justify-content: center;
 }
 
+/* Box container items with neumorphic style */
 .box {
-  width: calc(50% - 10px);
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 20px;
-  transition: transform 0.3s ease;
+  background: linear-gradient(145deg, #f0e9c5, #b6a952);
+  border-radius: 25px;
+  box-shadow:
+    8px 8px 15px #a59c52,
+    -8px -8px 15px #fffcca;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
-.box:hover,
-.box:focus-within {
-  transform: translateY(-5px);
-  color: greenyellow;
+.box:hover {
+  transform: translateZ(20px) rotateX(5deg);
+  box-shadow:
+    15px 15px 25px #8f852f,
+    -15px -15px 25px #ffffa8;
 }
 
 .box img {
