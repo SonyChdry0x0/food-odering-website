@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
   <title>FOODIE</title>
 </head>
-<body onload="myload()">
+<body>
 
   <!-- Loader -->
   <div class="loader-container" id="loader">
@@ -211,39 +211,7 @@
     </div>
   </footer>
 
-  <!-- JavaScript -->
-  <script>
-    window.addEventListener('load', function () {
-      document.getElementById("loader").style.display = "none";
-    });
-
-    document.querySelector('#menu-bars').onclick = () => {
-      document.querySelector('#menu-bars').classList.toggle('fa-times');
-      document.querySelector('.navbar').classList.toggle('active');
-    };
-
-    document.querySelector('#search-icon').onclick = () => {
-      document.querySelector('#search-form').classList.toggle('active');
-    };
-
-    document.querySelector('#close1').onclick = () => {
-      document.querySelector('#search-form').classList.remove('active');
-    };
-
-    function openAbout() {
-      document.getElementById("about").style.width = "100%";
-    }
-
-    function closeNav() {
-      document.getElementById("about").style.width = "0%";
-    }
-
-    // Add to Cart Alert
-    document.querySelectorAll('.add-to-cart').forEach(button => {
-      button.onclick = () => {
-        alert("Item added to cart!");
-      };
-    });
-  </script>
+  <script src="script.js"></script>
+ 
 </body>
 </html>
