@@ -38,13 +38,6 @@
         role="button"
         tabindex="0"
       ></i>
-      <i
-        class="fas fa-search"
-        id="search-icon"
-        aria-label="Open search"
-        role="button"
-        tabindex="0"
-      ></i>
       <a href="#" class="fas fa-shopping-cart" aria-label="Shopping cart"></a>
       <i class="fa fa-user" aria-hidden="true" aria-label="User icon"></i>
       <a
@@ -56,26 +49,28 @@
     </div>
   </header>
 
-  <!-- Search Form -->
-  <form action="#" id="search-form" role="search" aria-label="Food search form">
-    <input
-      type="search"
-      placeholder="Enter your food"
-      id="search-box"
-      aria-label="Search food"
-    />
-    <label for="search-box" class="fas fa-search" aria-hidden="true"></label>
-    <button type="button" class="close-btn" id="close1" aria-label="Close search">
-      <i class="fas fa-times"></i>
-    </button>
-  </form>
 
+<!-- Search Form -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h2>Order food from the widest range of restaurants.</h2>
+    <form class="search-bar" role="search" aria-label="Food search form">
+      <input
+        type="search"
+        placeholder="Restaurant or Cuisine (leave it blank to browse all)"
+        aria-label="Search food"
+      />
+      <button type="submit">Find Restaurants</button>
+    </form>
+  </div>
+</section>
+
+    
   <!-- Main Content -->
   <main>
     <section class="home" id="home-section">
       <div class="add">
         <div class="add-container">
-          <img src="Screenshot 2025-08-01 at 14.41.33.png" alt="Promo Image" />
           <div class="texting">
             <h2>ORDER YOUR CRAVINGS</h2>
           </div>
