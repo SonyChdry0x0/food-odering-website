@@ -30,7 +30,7 @@ html::-webkit-scrollbar-thumb:hover {
   background: orchid;
 }
 body {
-  background: linear-gradient(145deg, #fff7e6, #f0d6a0);
+  background: white;
   color: #b75500;
   font-family: 'Host Grotesk', 'Geist', 'Sansita', sans-serif;
   line-height: 1.5;
