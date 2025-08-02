@@ -1,282 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-  />
-  <title>FOODIE</title>
-</head>
-<body>
-  <!-- Loader -->
-  <div class="loader-container" id="loader">
-    <img src="images/image1.jpeg" alt="Loading..." />
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>FOODIE</title>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader-container" id="loader">
+      <img src="images/image1.jpeg" alt="Loading..." />
+    </div>
 
-  <!-- Header -->
-  <header>
-    <a href="#" class="logo" aria-label="FOODIE logo"
-      ><i class="fa fa-cutlery" aria-hidden="true"></i> FOODIE</a
-    >
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-      <a href="menu.html">MENU</a>
-      <a href="restaurants.html">RESTAURANT</a>
-      <a href="#" onclick="openAbout()" role="button" aria-haspopup="true"
-        >ABOUT</a
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo" aria-label="FOODIE logo"
+        ><i class="fa fa-cutlery" aria-hidden="true"></i> FOODIE</a
       >
-      <a href="contact.html">CONTACT</a>
-      <a href="#" class="feed" id="feedback" role="button">FEEDBACK</a>
-    </nav>
-    <div class="icons">
-      <i
-        class="fas fa-bars"
-        id="menu-bars"
-        aria-label="Toggle menu"
-        role="button"
-        tabindex="0"
-      ></i>
-      <a href="#" class="fas fa-shopping-cart" aria-label="Shopping cart"></a>
-      <i class="fa fa-user" aria-hidden="true" aria-label="User icon"></i>
-     <button class="login" aria-label="login">
-              login
-            </button>
-  </header>
+      <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <a href="menu.html">MENU</a>
+        <a href="restaurants.html">RESTAURANT</a>
+        <a href="#" onclick="openAbout()" role="button" aria-haspopup="true"
+          >ABOUT</a
+        >
+        <a href="contact.html">CONTACT</a>
+        <a href="#" class="feed" id="feedback" role="button">FEEDBACK</a>
+      </nav>
+      <button class="login" aria-label="login">login</button>
+    </header>
 
-
-<!-- Search Form -->
-<section class="hero-section">
-  <div class="hero-content">
-    <h2>Order food from the widest range of restaurants.</h2>
-    <form class="search-bar" role="search" aria-label="Food search form">
-      <input
-        type="search"
-        placeholder="Restaurant or Cuisine (leave it blank to browse all)"
-        aria-label="Search food"
-      />
-      <button type="submit">Find Restaurants</button>
-    </form>
-  </div>
-</section>
-
-    
-  <!-- Main Content -->
-  <main>
-    <section class="home" id="home-section">
-      <div class="add">
-        <div class="add-container">
-          <div class="texting">
-            <h2>ORDER YOUR CRAVINGS</h2>
-          </div>
-        </div>
-
-        <div class="spl">
-          <h2>Today's Specials</h2>
-        </div>
-        <div class="table">
-          <div class="special-item">
-            <a href="restaurants.html" tabindex="-1">
-              <img src="images/image2.jpg" height="150" alt="Momo" />
-              <h5>MOMO</h5>
-            </a>
-            <button class="add-to-cart" aria-label="Add Momo to cart">
-              Add to Cart
-            </button>
-          </div>
-          <div class="special-item">
-            <a href="restaurants.html" tabindex="-1">
-              <img src="images/image3.jpg" height="150" alt="Newari Khaja" />
-              <h5>Newari Khaja Set</h5>
-            </a>
-            <button class="add-to-cart" aria-label="Add Newari Khaja Set to cart">
-              Add to Cart
-            </button>
-          </div>
-          <div class="special-item">
-            <a href="restaurants.html" tabindex="-1">
-              <img src="images/image4.jpg" height="150" alt="Thukpa" />
-              <h5>Thukpa</h5>
-            </a>
-            <button class="add-to-cart" aria-label="Add Thukpa to cart">
-              Add to Cart
-            </button>
-          </div>
-          <div class="special-item">
-            <a href="restaurants.html" tabindex="-1">
-              <img src="images/image5.jpg" height="150" alt="Veg Khana" />
-              <h5>Veg Khana</h5>
-            </a>
-            <button class="add-to-cart" aria-label="Add Veg Khana to cart">
-              Add to Cart
-            </button>
-          </div>
-          <div class="special-item">
-            <a href="restaurants.html" tabindex="-1">
-              <img src="images/image6.jpg" height="150" alt="Chatpate" />
-              <h5>Chatpate</h5>
-            </a>
-            <button class="add-to-cart" aria-label="Add Chatpate to cart">
-              Add to Cart
-            </button>
-          </div>
-          <div class="special-item">
-            <a href="restaurants.html" tabindex="-1">
-              <img src="images/image7.jpg" height="150" alt="Laphing" />
-              <h5>Laphing</h5>
-            </a>
-            <button class="add-to-cart" aria-label="Add Laphing to cart">
-              Add to Cart
-            </button>
-          </div>
-          <div class="special-item">
-            <a href="restaurants.html" tabindex="-1">
-              <img src="images/image8.jpg" height="150" alt="Non-veg Khana" />
-              <h5>Non-veg Khana</h5>
-            </a>
-            <button class="add-to-cart" aria-label="Add Non-veg Khana to cart">
-              Add to Cart
-            </button>
-          </div>
-        </div>
-
-        <div class="res">
-          <h2>RESTAURANTS</h2>
-          <hr class="line" />
-        </div>
-
-        <section class="Khaja" id="momo" aria-label="Restaurants List">
-          <h1 class="Nepali">Restaurants</h1>
-          <hr class="line" />
-          <div class="box-container">
-            <div class="box">
-              <a href="momo.html">
-                <img src="images/image2.jpg" alt="Momo Palace" />
-              </a>
-              <h3>MOMO PALACE</h3>
-              <div class="stars" aria-label="4.5 star rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star-half-alt"></i>
-                <p>Veg, Chicken, Mutton</p>
-              </div>
-            </div>
-            <div class="box">
-              <a href="laphing.html">
-                <img src="images/image7.jpg" alt="Laphing Ghar" />
-              </a>
-              <h3>LAPHING GHAR</h3>
-              <div class="stars" aria-label="4.5 star rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star-half-alt"></i>
-                <p>Laphing, Keema Noodles, Chatpate</p>
-              </div>
-            </div>
-            <div class="box">
-              <a href="newari.html">
-                <img src="images/image3.jpg" alt="Newari Khaja" />
-              </a>
-              <h3>NEWARI KHAJA</h3>
-              <div class="stars" aria-label="3.5 star rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i
-                ><i class="fas fa-star-half-alt"></i>
-                <p>Choila</p>
-              </div>
-            </div>
-            <div class="box">
-              <a href="thakali.html">
-                <img src="images/image8.jpg" alt="Tharu Thakali" />
-              </a>
-              <h3>THARU THAKALI</h3>
-              <div class="stars" aria-label="4 star rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <p>Veg, Chicken, Mutton</p>
-              </div>
-            </div>
-            <div class="box">
-              <a href="cake.html">
-                <img src="images/image10.jpg" alt="Cake Point" />
-              </a>
-              <h3>CAKE POINT</h3>
-              <div class="stars" aria-label="4 star rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <p>Cake, Bread, Ice-cream</p>
-              </div>
-            </div>
-            <div class="box">
-              <a href="olive.html">
-                <img src="images/image11.jpg" alt="Olive Fastfood" />
-              </a>
-              <h3>OLIVE FASTFOOD</h3>
-              <div class="stars" aria-label="4.5 star rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star-half-alt"></i>
-                <p>Veg, Chicken, Mutton</p>
-              </div>
-            </div>
-            <div class="box">
-              <a href="desi.html">
-                <img src="images/image10.jpg" alt="Desi Khana" />
-              </a>
-              <h3>DESI KHANA</h3>
-              <div class="stars" aria-label="4.5 star rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star-half-alt"></i>
-                <p>Tandoori, Naan, Biryani</p>
-              </div>
-            </div>
-          </div>
-        </section>
+    <!-- Search Form -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h2>Order food from the widest range of restaurants.</h2>
+        <form class="search-bar" role="search" aria-label="Food search form">
+          <input
+            type="search"
+            placeholder="Restaurant or Cuisine (leave it blank to browse all)"
+            aria-label="Search food"
+          />
+          <button type="submit">Find Restaurants</button>
+        </form>
       </div>
     </section>
-  </main>
 
-  <!-- About Overlay -->
-  <div id="about" class="about" role="dialog" aria-modal="true" aria-labelledby="about-title" aria-hidden="true">
-    <button class="closebtn" onclick="closeNav()" aria-label="Close About">&times;</button>
-    <div class="about_overlay">
-      <h2 id="about-title">About</h2>
-      <p>
-        Launched in 2021, our platform connects customers, restaurant partners,
-        and delivery partners. Customers use our platform to discover restaurants,
-        order food, and make dining reservations. We also supply high-quality
-        ingredients and kitchen products to restaurants.
-      </p>
-    </div>
-  </div>
+    <!-- Main Content -->
+    <main>
+      <section class="home" id="home-section">
+        <div class="add">
+          <div class="add-container">
+            <div class="texting">
+              <h2>ORDER YOUR CRAVINGS</h2>
+            </div>
+          </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-col">
-        <h4>Foodies</h4>
-        <ul>
-          <li><a href="#" onclick="openAbout()">About Us</a></li>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Payment Policy</a></li>
-        </ul>
+          <div class="spl">
+            <h2>Today's Specials</h2>
+          </div>
+          <div class="table">
+            <div class="special-item">
+              <a href="restaurants.html" tabindex="-1">
+                <img src="images/image2.jpg" height="150" alt="Momo" />
+                <h5>MOMO</h5>
+              </a>
+              <button class="add-to-cart" aria-label="Add Momo to cart">
+                Add to Cart
+              </button>
+            </div>
+            <div class="special-item">
+              <a href="restaurants.html" tabindex="-1">
+                <img src="images/image3.jpg" height="150" alt="Newari Khaja" />
+                <h5>Newari Khaja Set</h5>
+              </a>
+              <button
+                class="add-to-cart"
+                aria-label="Add Newari Khaja Set to cart"
+              >
+                Add to Cart
+              </button>
+            </div>
+            <div class="special-item">
+              <a href="restaurants.html" tabindex="-1">
+                <img src="images/image4.jpg" height="150" alt="Thukpa" />
+                <h5>Thukpa</h5>
+              </a>
+              <button class="add-to-cart" aria-label="Add Thukpa to cart">
+                Add to Cart
+              </button>
+            </div>
+            <div class="special-item">
+              <a href="restaurants.html" tabindex="-1">
+                <img src="images/image5.jpg" height="150" alt="Veg Khana" />
+                <h5>Veg Khana</h5>
+              </a>
+              <button class="add-to-cart" aria-label="Add Veg Khana to cart">
+                Add to Cart
+              </button>
+            </div>
+            <div class="special-item">
+              <a href="restaurants.html" tabindex="-1">
+                <img src="images/image6.jpg" height="150" alt="Chatpate" />
+                <h5>Chatpate</h5>
+              </a>
+              <button class="add-to-cart" aria-label="Add Chatpate to cart">
+                Add to Cart
+              </button>
+            </div>
+            <div class="special-item">
+              <a href="restaurants.html" tabindex="-1">
+                <img src="images/image7.jpg" height="150" alt="Laphing" />
+                <h5>Laphing</h5>
+              </a>
+              <button class="add-to-cart" aria-label="Add Laphing to cart">
+                Add to Cart
+              </button>
+            </div>
+            <div class="special-item">
+              <a href="restaurants.html" tabindex="-1">
+                <img src="images/image8.jpg" height="150" alt="Non-veg Khana" />
+                <h5>Non-veg Khana</h5>
+              </a>
+              <button
+                class="add-to-cart"
+                aria-label="Add Non-veg Khana to cart"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <div class="res">
+            <h2>RESTAURANTS</h2>
+            <hr class="line" />
+          </div>
+
+          <section class="Khaja" id="momo" aria-label="Restaurants List">
+            <h1 class="Nepali">Restaurants</h1>
+            <hr class="line" />
+            <div class="box-container">
+              <div class="box">
+                <a href="momo.html">
+                  <img src="images/image2.jpg" alt="Momo Palace" />
+                </a>
+                <h3>MOMO PALACE</h3>
+                <div class="stars" aria-label="4.5 star rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star-half-alt"></i>
+                  <p>Veg, Chicken, Mutton</p>
+                </div>
+              </div>
+              <div class="box">
+                <a href="laphing.html">
+                  <img src="images/image7.jpg" alt="Laphing Ghar" />
+                </a>
+                <h3>LAPHING GHAR</h3>
+                <div class="stars" aria-label="4.5 star rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star-half-alt"></i>
+                  <p>Laphing, Keema Noodles, Chatpate</p>
+                </div>
+              </div>
+              <div class="box">
+                <a href="newari.html">
+                  <img src="images/image3.jpg" alt="Newari Khaja" />
+                </a>
+                <h3>NEWARI KHAJA</h3>
+                <div class="stars" aria-label="3.5 star rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i
+                  ><i class="fas fa-star-half-alt"></i>
+                  <p>Choila</p>
+                </div>
+              </div>
+              <div class="box">
+                <a href="thakali.html">
+                  <img src="images/image8.jpg" alt="Tharu Thakali" />
+                </a>
+                <h3>THARU THAKALI</h3>
+                <div class="stars" aria-label="4 star rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <p>Veg, Chicken, Mutton</p>
+                </div>
+              </div>
+              <div class="box">
+                <a href="cake.html">
+                  <img src="images/image10.jpg" alt="Cake Point" />
+                </a>
+                <h3>CAKE POINT</h3>
+                <div class="stars" aria-label="4 star rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <p>Cake, Bread, Ice-cream</p>
+                </div>
+              </div>
+              <div class="box">
+                <a href="olive.html">
+                  <img src="images/image11.jpg" alt="Olive Fastfood" />
+                </a>
+                <h3>OLIVE FASTFOOD</h3>
+                <div class="stars" aria-label="4.5 star rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star-half-alt"></i>
+                  <p>Veg, Chicken, Mutton</p>
+                </div>
+              </div>
+              <div class="box">
+                <a href="desi.html">
+                  <img src="images/image10.jpg" alt="Desi Khana" />
+                </a>
+                <h3>DESI KHANA</h3>
+                <div class="stars" aria-label="4.5 star rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star-half-alt"></i>
+                  <p>Tandoori, Naan, Biryani</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- About Overlay -->
+    <div
+      id="about"
+      class="about"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="about-title"
+      aria-hidden="true"
+    >
+      <button class="closebtn" onclick="closeNav()" aria-label="Close About">
+        &times;
+      </button>
+      <div class="about_overlay">
+        <h2 id="about-title">About</h2>
+        <p>
+          Launched in 2021, our platform connects customers, restaurant
+          partners, and delivery partners. Customers use our platform to
+          discover restaurants, order food, and make dining reservations. We
+          also supply high-quality ingredients and kitchen products to
+          restaurants.
+        </p>
       </div>
-      <div class="footer-col">
-        <h4>Get Help</h4>
-        <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Delivery</a></li>
-          <li><a href="#">My Orders</a></li>
-          <li><a href="#">Order Status</a></li>
-          <li><a href="#">Payment Options</a></li>
-        </ul>
-      </div>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-col">
+          <h4>Foodies</h4>
+          <ul>
+            <li><a href="#" onclick="openAbout()">About Us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Payment Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">My Orders</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Payment Options</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
