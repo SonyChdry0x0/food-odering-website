@@ -53,8 +53,6 @@ body {
   z-index: 1000;
 }
 
-
-/* Header with soft shadow and slight 3D lift */
 header {
   display: flex;
   justify-content: space-between;
@@ -70,9 +68,9 @@ header {
   transition: transform 0.3s ease;
 }
 
-header:hover {
+/* header:hover {
   transform: translateZ(20px) rotateX(2deg);
-}
+} */
 
 header .logo {
   font-size: 2.5rem;
