@@ -390,7 +390,7 @@ html::-webkit-scrollbar-thumb {
 /* Hero Section with Search */
 .hero-section {
   height: 100vh;
-  background: url('Screenshot 2025-08-01 at 14.41.33.png') no-repeat center center/cover;
+  background: url('Images/home.png') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
