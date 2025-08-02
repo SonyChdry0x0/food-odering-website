@@ -165,7 +165,7 @@ header .icons a {
 /* Today's Specials Section */
 .spl {
   padding: 20px;
-  background: #ffd700;
+  background: linear-gradient(145deg, #f7e6b3, #c9b46f);
   color: #333;
   text-align: center;
 }
@@ -461,7 +461,7 @@ html::-webkit-scrollbar-thumb {
   padding: 14px 28px;
   font-size: 1rem;
   font-weight: 700;
-  background-color: #ffca00;
+  background: linear-gradient(145deg, #f7e6b3, #c9b46f);
   color: #2d1b00;
   border: none;
   border-radius: 8px;
