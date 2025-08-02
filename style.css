@@ -38,8 +38,18 @@ body {
   perspective: 1000px;
 }
 
+.login{
+  background-color: rgb(37, 35, 35);
+  width:95px;
+  height:35px;
+  border-radius: 10px;
+  color:yellow;
+  font-size:20px;
+}
+.login:hover{
+  background-color:rgb(98, 96, 96);
+}
 
-/* Preloader */
 .loader-container {
   position: fixed;
   top: 0;
