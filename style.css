@@ -447,7 +447,7 @@ header .icons a {
   text-align: center;
 }
 html::-webkit-scrollbar-thumb {
-  background: rgb(156, 154, 154);
+  background: white;
   border-radius: 8px;
   box-shadow: 1px 1px 3px #a28f30 inset;
 }
