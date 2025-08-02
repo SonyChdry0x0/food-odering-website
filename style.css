@@ -36,8 +36,7 @@ body {
   line-height: 1.5;
   /* add a little perspective for 3D child elements */
   perspective: 1000px;
-  margin: 0;
-  padding-top: 70px;
+
 }
 
 .login{
