@@ -156,7 +156,7 @@ header .icons a {
 
 .spl h2 {
   font-size: 2.5rem;
-  color: #333;
+  color: rgb(67, 66, 66);
   margin-bottom: 10px;
 }
 
@@ -181,7 +181,7 @@ header .icons a {
 
 /* Special items with layered shadow and hover pop */
 .special-item {
-  background: linear-gradient(145deg, #fffbe2, #c7b880);
+  background: white;
   border-radius: 20px;
   padding: 12px 15px;
   box-shadow: 8px 8px 15px #c6bb7d, -8px -8px 15px #fffdd0;
@@ -218,21 +218,21 @@ header .icons a {
 }
 
 .add-to-cart {
-  background: linear-gradient(145deg, #85c47a, #4b7c38);
+  background: rgb(67, 66, 66);
   color: #f3f9f1;
   padding: 10px 18px;
   border-radius: 15px;
   font-weight: 900;
   border: none;
   cursor: pointer;
-  box-shadow: 6px 6px 8px #3a5a24, -6px -6px 8px #a6e380;
+  box-shadow: 6px 6px 8px rgb(91, 90, 90) -6px -6px 8px rgb(107, 105, 105);
   transition: all 0.3s ease;
 }
 
 .add-to-cart:hover,
 .add-to-cart:focus {
-  background: linear-gradient(145deg, #4b7c38, #2c4e1a);
-  box-shadow: inset 4px 4px 6px #224217, inset -4px -4px 6px #72c13f;
+  background: rgb(182, 179, 179);
+  box-shadow: rgb(86, 85, 85);
   transform: translateZ(15px) scale(1.1);
   outline: none;
 }
@@ -315,7 +315,7 @@ header .icons a {
 }
 
 .box {
-  background: linear-gradient(145deg, #f0e9c5, #b6a952);
+  background: white;
   border-radius: 25px;
   flex: 0 0 auto; /* Do not shrink or wrap */
   width: 320px;
@@ -327,7 +327,7 @@ header .icons a {
 
 .box:hover {
   transform: translateZ(20px) rotateX(5deg);
-  box-shadow: 15px 15px 25px #8f852f, -15px -15px 25px #ffffa8;
+  box-shadow: 15px 15px 25px #f4f3e7, -15px -15px 25px #fefed3;
 }
 
 .box img {
