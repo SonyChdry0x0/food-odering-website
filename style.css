@@ -36,6 +36,8 @@ body {
   line-height: 1.5;
   /* add a little perspective for 3D child elements */
   perspective: 1000px;
+  margin: 0;
+  padding-top: 70px;
 }
 
 .login{
@@ -65,7 +67,7 @@ body {
 
 header {
   display: flex;
-  position:fixed;
+    position: sticky;
   top:0;
   left:0;
   width:100%;
