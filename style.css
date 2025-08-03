@@ -167,7 +167,7 @@ header .icons a {
   gap: 20px;
   padding: 20px;
   scrollbar-width: thin;
-  scrollbar-color: grey ;
+  scrollbar-color: white ;
 }
 
 .table::-webkit-scrollbar {
@@ -175,7 +175,7 @@ header .icons a {
 }
 
 .table::-webkit-scrollbar-thumb {
-  background: grey;
+  background: white;
   border-radius: 4px;
 }
 
@@ -529,7 +529,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* Media Queries */
-@media (max-width: 568px) {
+@media (max-width: 768px) {
   #menu-bars {
     display: block;
     font-size: 1.8rem;
@@ -546,14 +546,15 @@ html::-webkit-scrollbar-thumb {
     transition: 0.3s ease;
   }
 
-  .navbar.active {
+  /* .navbar.active {
     left: 0;
-  }
+  } */
 
   .navbar a {
     color: #ffd700;
     padding: 15px 0;
     border-bottom: 1px solid #555;
+    width:fit-content;
   }
 
   .navbar a:hover,
