@@ -14,6 +14,44 @@ if (menuBars && navbar) {
     navbar.classList.toggle('active');
   });
 }
+const boxContainer = document.querySelector('.box-container');
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+
+const scrollStep = 300; // Pixels per click
+
+// Show/hide buttons based on scroll
+function updateButtons() {
+  const maxScrollLeft = boxContainer.scrollWidth - boxContainer.clientWidth;
+  
+  if (boxContainer.scrollLeft <= 0) {
+    prevBtn.style.display = 'none'; // Hide prev at start
+  } else {
+    prevBtn.style.display = 'block'; // Show prev when scrolled
+  }
+
+  if (boxContainer.scrollLeft >= maxScrollLeft) {
+    nextBtn.style.display = 'none'; // Hide next at end
+  } else {
+    nextBtn.style.display = 'block'; // Show next when not at end
+  }
+}
+
+// Initial check
+updateButtons();
+
+// Scroll events
+boxContainer.addEventListener('scroll', updateButtons);
+
+// Button click events
+nextBtn.addEventListener('click', () => {
+  boxContainer.scrollBy({ left: scrollStep, behavior: 'smooth' });
+});
+
+prevBtn.addEventListener('click', () => {
+  boxContainer.scrollBy({ left: -scrollStep, behavior: 'smooth' });
+});
+
 
 // Toggle search bar
 const searchIcon = document.getElementById('search-icon');

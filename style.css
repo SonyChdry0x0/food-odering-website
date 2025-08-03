@@ -248,16 +248,7 @@ header .icons a {
   font-size:15px;
 }
 
-.box-container {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: nowrap !important; /* Prevent wrapping */
-  gap: 20px;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  padding: 10px;
-}
+
 
 .Brief {
   position: relative;
@@ -320,7 +311,54 @@ header .icons a {
 .learn:hover {
   background: linear-gradient(145deg, #a6985d, #8b7c42);
 }
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+.slider-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  color: black;
+  font-size: 24px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 60%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
 
+.slider-container .prev {
+  left: 10px;
+
+}
+
+.slider-container .next {
+  right: 10px;
+}
+
+.slider-container button:hover {
+  opacity: 0;
+}
+
+.hidden {
+  display: none; /* Class to hide button */
+}
+.box-container {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important; /* Prevent wrapping */
+  gap: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
 .box {
   background: white;
   border-radius: 25px;
