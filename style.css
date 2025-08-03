@@ -240,6 +240,13 @@ header .icons a {
 .Khaja {
   padding: 40px 20px;
 }
+.symbol {
+  margin-left: 9px; 
+  font-size: 18px;/* Adjust gap as needed */
+}
+.text{
+  font-size:15px;
+}
 
 .box-container {
   display: flex !important;
