@@ -511,9 +511,9 @@ html::-webkit-scrollbar-thumb {
 }
 
 .hero-content {
-  max-width: 800px;
+  /* max-width: 1700px; */
   width: 100%;
-  margin-top: -250px;
+  margin-top: -620px;
   background-color: rgba(255, 255, 255, 0.92);
   padding: 40px 30px;
   border-radius: 20px;
