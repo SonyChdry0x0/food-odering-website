@@ -85,6 +85,12 @@ header {
 /* header:hover {
   transform: translateZ(20px) rotateX(2deg);
 } */
+header .navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
 header .logo {
   font-size: 2.5rem;
@@ -96,6 +102,10 @@ header .logo {
 header .search-bar {
   display: flex;
   align-items: center;
+}
+header .search-bar input::placeholder {
+  color: #888;
+  font-style: italic;
 }
 header .search-bar input[type="search"] {
   padding: 6px 10px;
