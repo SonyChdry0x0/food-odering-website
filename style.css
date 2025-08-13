@@ -97,7 +97,8 @@ header .logo {
 header .navbar a {
   color: #5a472a;
   text-decoration: none;
-  margin: 0 18px;
+  margin: 20px 18px;
+  
   font-size: 1.2rem;
   font-weight: 700;
   padding: 8px 14px;
