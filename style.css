@@ -109,13 +109,13 @@ header .search-bar input::placeholder {
 }
 header .search-bar input[type="search"] {
   padding: 6px 10px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   border: 1px solid #ccc;
   border-radius: 6px;
   outline: none;
   background-color: #fff;
   box-shadow: inset 1px 1px 3px #ccc, inset -1px -1px 3px #fdf5d7;
-  width: 200px;
+  width: 330px;
 }
 header .navbar a {
   color: #5a472a;
