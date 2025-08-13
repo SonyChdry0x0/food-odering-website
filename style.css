@@ -109,7 +109,7 @@ header .search-bar input::placeholder {
 }
 header .search-bar input[type="search"] {
   padding: 6px 10px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   border: 1px solid #ccc;
   border-radius: 6px;
   outline: none;
