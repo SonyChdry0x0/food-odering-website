@@ -93,7 +93,20 @@ header .logo {
   text-shadow: 2px 2px 6px #ac7a00;
   cursor: default;
 }
-
+header .search-bar {
+  display: flex;
+  align-items: center;
+}
+header .search-bar input[type="search"] {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 3px #ccc, inset -1px -1px 3px #fdf5d7;
+  width: 200px;
+}
 header .navbar a {
   color: #5a472a;
   text-decoration: none;
