@@ -173,6 +173,14 @@ header .icons a {
   padding: 0;
 }
 
+.main{
+  height:200px;
+  width: 100%;         /* Full width of the page */     /* Keep image aspect ratio */
+  display: block;      /* Remove inline spacing */
+  margin: 20px 0;      /* Space above and below */
+  border-radius: 10px; /* Optional rounded corners */
+}
+
 /* Home Section */
 .home {
   padding: 40px 20px;
