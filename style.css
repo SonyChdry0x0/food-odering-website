@@ -117,6 +117,21 @@ header .search-bar input[type="search"] {
   box-shadow: inset 1px 1px 3px #ccc, inset -1px -1px 3px #fdf5d7;
   width: 330px;
 }
+header .search-btn {
+  color: #5a472a;
+  text-decoration: none;
+  margin: 20px 18px;
+   gap: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #f7e6b3, #c9b46f);
+  box-shadow: 3px 3px 6px #b7a553, -3px -3px 6px #fff3a1;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+}
 header .navbar a {
   color: #5a472a;
   text-decoration: none;
