@@ -21,7 +21,8 @@ It allows users to browse menus, search for dishes, add items to their cart, and
 
 - **HTML5** – Structure  
 - **CSS3** – Styling & responsive design  
-- **JavaScript (Vanilla JS)** – Interactivity  
+- **JavaScript (Vanilla JS)** – Interactivity
+- **Django** – Backend 
 
 ---
 
