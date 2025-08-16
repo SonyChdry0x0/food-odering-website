@@ -176,7 +176,7 @@ header .icons a {
   height:700px;
   width: 100%;         
   display: block;      
-  margin: 20px 0;      /* Space above and below */
+  margin: 20px 0;      
   border-radius: 10px; /* Optional rounded corners */
 }
 
