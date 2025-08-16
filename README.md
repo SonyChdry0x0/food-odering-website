@@ -1,6 +1,6 @@
 # 🍴 FOODIE – Online Food Ordering Website  
 
-FOODIE is a responsive **food ordering website** built with **HTML, CSS, and JavaScript**.  
+FOODIE is a responsive **food ordering website** built with **HTML, CSS, JavaScript , django**.  
 It allows users to browse menus, search for dishes, add items to their cart, and place orders with a smooth user experience.  
 
 ---
