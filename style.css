@@ -115,7 +115,7 @@ header .search-bar input[type="search"] {
   outline: none;
   background-color: #fff;
   box-shadow: inset 1px 1px 3px #ccc, inset -1px -1px 3px #fdf5d7;
-  width: 330px;
+  width: 730px;
 }
 header .search-btn {
   color: #5a472a;
