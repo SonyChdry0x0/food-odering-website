@@ -207,7 +207,7 @@ header .icons a {
   margin-bottom: 10px;
 }
 
-/* Horizontal scroll container */
+
 .table {
   display: flex;
   overflow-x: auto;
