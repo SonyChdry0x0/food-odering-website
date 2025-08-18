@@ -558,9 +558,7 @@ html::-webkit-scrollbar-thumb {
     transition: 0.3s ease;
   }
 
-  /* .navbar.active {
-    left: 0;
-  } */
+ 
 
   .navbar a {
     color: #ffd700;
