@@ -246,7 +246,7 @@ header .icons a {
   box-shadow: 15px 15px 20px #a6985d, -15px -15px 20px #ffffc7;
 }
 
-/* Images with subtle 3D shadow */
+
 .special-item img {
   border-radius: 12px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15),
