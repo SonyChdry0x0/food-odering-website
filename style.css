@@ -407,7 +407,7 @@ header .icons a {
 .box {
   background: white;
   border-radius: 25px;
-  flex: 0 0 auto; /* Do not shrink or wrap */
+  flex: 0 0 auto; 
   width: 320px;
 
   box-shadow: 8px 8px 15px #a59c52, -8px -8px 15px #fffcca;
