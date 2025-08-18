@@ -397,7 +397,7 @@ header .icons a {
 .box-container {
   display: flex !important;
   flex-direction: row !important;
-  flex-wrap: nowrap !important; /* Prevent wrapping */
+  flex-wrap: nowrap !important;
   gap: 20px;
   overflow-x: auto; 
   overflow-y: hidden;
