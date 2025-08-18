@@ -541,7 +541,6 @@ html::-webkit-scrollbar-thumb {
   border-radius: 8px;
   box-shadow: 1px 1px 3px #a28f30 inset;
 }
-/* Media Queries */
 @media (max-width: 768px) {
   #menu-bars {
     display: block;
