@@ -392,7 +392,7 @@ header .icons a {
 }
 
 .hidden {
-  display: none; /* Class to hide button */
+  display: none; 
 }
 .box-container {
   display: flex !important;
