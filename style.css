@@ -82,9 +82,7 @@ header {
   transition: transform 0.3s ease;
 }
 
-/* header:hover {
-  transform: translateZ(20px) rotateX(2deg);
-} */
+
 header .navbar {
   display: flex;
   align-items: center;
