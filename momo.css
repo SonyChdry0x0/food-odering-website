@@ -168,3 +168,51 @@ header .icons a {
   border-radius: 10px; 
   
 }
+
+
+.Brief {
+  position: relative;
+  width: 100%;
+  height: 430px; 
+  overflow: hidden;
+}
+
+.Brief img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Brief .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dim effect */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.Brief h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.Brief p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 15px;
+  max-width: 800px;
+}
+
+.Brief h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 25px;
+}
