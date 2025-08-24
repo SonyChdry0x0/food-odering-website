@@ -226,7 +226,7 @@ header .logo i {
 
 .Brief img {
   width: 100%;
-  height: 60vh;
+  height: 55vh;
   object-fit: cover;
   filter: brightness(60%);
 }
