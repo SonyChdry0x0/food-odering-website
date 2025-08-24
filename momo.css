@@ -13,6 +13,7 @@ body {
 }
 
 /* ===== Header ===== */
+/*
 header {
   display: flex;
   justify-content: space-between;
@@ -36,7 +37,7 @@ header .logo i {
   margin-right: 8px;
 }
 
-/* Search Bar */
+
 .search-bar {
   display: flex;
   align-items: center;
@@ -62,7 +63,7 @@ header .logo i {
   background: #457b9d;
 }
 
-/* Navbar */
+
 .navbar a,
 .navbar button {
   margin-left: 15px;
@@ -83,7 +84,7 @@ header .logo i {
 .navbar a:hover {
   color: #f1faee;
 }
-
+*/
 /* ===== Hero Section ===== */
 .Brief {
   position: relative;

@@ -8,8 +8,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 <body>
+   <header>
+  <a href="#" class="logo" aria-label="FOODIE logo">
+    <i class="fa fa-cutlery" aria-hidden="true"></i> FOODIE
+  </a>
+
+
+    <form class="search-bar" role="search" aria-label="Food search form">
+      <input
+        type="search"
+        placeholder="Search Restaurants or Cuisine"
+        aria-label="Search food"
+      />
+    </form>
+    <button class="search-btn">Search</button>
+  </nav>
+  
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <a href="#" onclick="openAbout()" role="button" aria-haspopup="true">ABOUT</a>
+
+
+  <button class="login" aria-label="login">login</button>
+</header>
+   
   <!-- Header -->
-  <header>
+  <!-- <header>
     <a href="#" class="logo">
       <i class="fa fa-cutlery"></i> FOODIE
     </a>
@@ -28,7 +51,7 @@
       <a href="#contact">Contact</a>
       <button class="login">Login</button>
     </nav>
-  </header>
+  </header> -->
 
   <!-- Hero / Brief Section -->
   <section id="hero" class="Brief">
