@@ -13,14 +13,16 @@ body {
 }
 /* Hero Menu Buttons */
 .hero-menu {
+  display: flex;
   margin-top: 20px;
+  margin-left:150px;
 }
 
 .hero-menu a {
   text-decoration: none;
   color: black;
-  padding: 8px 15px;
-  margin: 10 8px;
+  padding: 8px 7px;  /* spacing inside links */
+  margin-left: 20px;   /* spacing between links */
   border-radius: 0px;
   font-weight: 500;
   transition: 0.3s;
@@ -29,6 +31,7 @@ body {
 .hero-menu a:hover {
   color: orange;
 }
+
 
 
 /* ===== Header ===== */
