@@ -480,7 +480,7 @@ footer .socials a:hover {
   color: #f4a261;
 }
 
-/* ===== Responsive ===== */
+/* ===== Responsive desing ===== */
 @media(max-width: 768px) {
   header {
     flex-direction: column;
