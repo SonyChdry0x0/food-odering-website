@@ -57,7 +57,7 @@ header nav ul li a:hover {
   box-shadow: inset 2px 2px 5px #8b6d1e, inset -2px -2px 5px #ffe14a;
 }
 
-/* ===== About Page Section ===== */
+/* ===== About Section ===== */
 .about-page {
   padding: 80px 10%;
   background: #fff8f0;
@@ -89,6 +89,14 @@ header nav ul li a:hover {
 .about-page i {
   margin-right: 8px;
   color: #e63946;
+}
+
+/* Google Map */
+.map-container {
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* ===== Footer ===== */
