@@ -34,10 +34,11 @@ header .logo {
 }
 
 header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center; /* center items when wrapping */
+  gap: 15px;
 }
+
 
 header nav ul li a {
   text-decoration: none;
@@ -58,56 +59,66 @@ header nav ul li a:hover {
 }
 
 /* ===== About Section ===== */
-.about-page {
-  padding: 80px 10%;
-  background: #fff8f0;
-  text-align: center;
+
+/* About Page Container */
+.about-container {
   max-width: 900px;
-  margin: auto;
-}
-
-.about-page h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #e63946;
-}
-
-.about-page p {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  line-height: 1.6;
+  margin: 50px auto;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
   color: #333;
+  background: #fff9eb; /* subtle cream background */
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
-.about-page .location,
-.about-page .contact {
-  margin-top: 20px;
-  font-size: 1.1rem;
-  color: #555;
+
+/* Headline */
+.about-container h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #1d3557;
 }
 
-.about-page i {
-  margin-right: 8px;
+/* Contact Info */
+.about-container .contact-info {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.about-container .contact-info p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.about-container .contact-info i {
   color: #e63946;
+  font-size: 20px;
 }
 
-/* Google Map */
+/* Map Styling */
 .map-container {
   margin-top: 40px;
-  width: 100%;        /* full width */
-  max-width: 1000px;  /* optional max width */
-  height: 500px;      /* increase height */
+  width: 100%;
+  height: 900px;       /* make map taller */
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
-/* Make iframe inside map responsive */
 .map-container iframe {
   width: 100%;
   height: 100%;
   border: 0;
 }
+
+/* Responsive Adjustments */
+
+
 /* ===== Footer ===== */
 footer {
   padding: 20px;
@@ -128,13 +139,5 @@ footer .socials a:hover {
 }
 
 /* ===== Responsive ===== */
-@media(max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-  header nav ul {
-    flex-wrap: wrap;
-  }
-}
+ 
