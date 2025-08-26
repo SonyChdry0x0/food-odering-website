@@ -58,87 +58,66 @@ header nav ul li a:hover {
 }
 
 /* ===== About Page ===== */
-.about-page {
-  padding: 80px 10%;
-  background: #fff8f0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+/* About Page Container */
 .about-container {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  flex-wrap: wrap;
-  max-width: 1200px;
-}
-
-.about-container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #e63946;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
   text-align: center;
-  width: 100%;
-}
-
-.about-text {
-  flex: 1 1 50%;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.8;
   color: #333;
 }
 
-.about-text ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 20px 0;
+/* Headline */
+.about-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1d3557;
 }
 
-.about-text ul li {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: #444;
-  position: relative;
-  padding-left: 25px;
+/* Contact Info */
+.about-container .contact-info {
+  margin-top: 30px;
+  font-size: 18px;
 }
 
-.about-text ul li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: #e74c3c;
+.about-container .contact-info p {
+  margin: 8px 0;
 }
 
-.about-text .btn {
-  display: inline-block;
-  padding: 12px 25px;
-  background: #e74c3c;
-  color: white;
-  border-radius: 30px;
-  font-size: 1rem;
-  transition: 0.3s;
-  text-decoration: none;
-  margin-top: 15px;
+.about-container .contact-info i {
+  margin-right: 8px;
+  color: #e63946;
 }
 
-.about-text .btn:hover {
-  background: #c0392b;
-}
-
-.about-image {
-  flex: 1 1 45%;
-}
-
-.about-image img {
+/* Map Styling */
+.map-container {
+  margin-top: 40px;
   width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  height: 500px;       /* make map taller */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive Adjustments */
+@media(max-width: 768px) {
+  .about-container {
+    font-size: 16px;
+  }
+
+  .map-container {
+    height: 350px;
+  }
+}
+
 
 /* ===== Footer ===== */
 footer {
