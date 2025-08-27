@@ -19,6 +19,7 @@ body {
   justify-content: center;
   background-color: #003366; /* deep blue background */
   padding: 10px 0;
+  gap: 28px;
 }
 
 .navbar-steps a {
