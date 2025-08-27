@@ -14,13 +14,11 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3 {
-  color: #222;
-}
+
 
 /* =========================
    Header & Navbar
-=========================== */
+
 header {
   background: #ff4757;
   color: #fff;
@@ -103,6 +101,7 @@ header .logo i {
   background: #ffeaa7;
   color: #000;
 }
+=========================== */
 
 /* =========================
    Hero Section
