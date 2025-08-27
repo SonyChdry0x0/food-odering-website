@@ -17,7 +17,7 @@ body {
 .navbar-steps {
   display: flex;
   justify-content: center;
-  background-color: #003366; /* deep blue background */
+  background-color: #f3ec8c;/* deep blue background */
   padding: 10px 0;
   gap: 28px;
 }
