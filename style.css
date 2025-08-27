@@ -73,7 +73,7 @@ header {
   z-index: 1000;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 8px 20px;
   background: white;
   color: #4a3f2f;
   border-radius: 15px;
@@ -91,7 +91,7 @@ header .navbar {
 }
 
 header .logo {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   color: #553300;
   font-weight: 900;
   text-shadow: 2px 2px 6px #ac7a00;
@@ -134,9 +134,9 @@ header .navbar a {
   text-decoration: none;
   margin: 20px 18px;
    gap: 20px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
-  padding: 8px 14px;
+  padding: 6px 10px;
   border-radius: 12px;
   background: linear-gradient(145deg, #f7e6b3, #c9b46f);
   box-shadow: 3px 3px 6px #b7a553, -3px -3px 6px #fff3a1;
@@ -156,7 +156,7 @@ header .navbar a:hover {
 header .icons i,
 header .icons a {
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0 10px;
   cursor: pointer;
 }
@@ -541,7 +541,7 @@ html::-webkit-scrollbar-thumb {
   border-radius: 8px;
   box-shadow: 1px 1px 3px #a28f30 inset;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #menu-bars {
     display: block;
     font-size: 1.8rem;
@@ -577,4 +577,4 @@ html::-webkit-scrollbar-thumb {
   .box {
     width: 100%;
   }
-}
+} */
