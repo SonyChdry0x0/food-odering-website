@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   background-color:  #ebebed;
-  padding: 10px 0;
+  padding: 10px 7px;
   gap: 28px;
 }
 
