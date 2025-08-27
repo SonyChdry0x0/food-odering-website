@@ -87,21 +87,7 @@ header .logo i {
   color: #ffeaa7;
 }
 
-.login {
-  background: #fff;
-  color: #ff4757;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.login:hover {
-  background: #ffeaa7;
-  color: #000;
-}
-=========================== */
+======================== */
 
 .login {
   background-color: rgb(37, 35, 35);
