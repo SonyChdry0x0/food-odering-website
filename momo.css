@@ -147,7 +147,7 @@ header {
   z-index: 1000;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 8px 20px;
   background: white;
   color: #4a3f2f;
   border-radius: 15px;
@@ -558,17 +558,3 @@ footer .socials a:hover {
 /* =========================
    Responsive Design
 =========================== */
-@media (max-width: 900px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-    gap: 12px;
-  }
-  .navbar {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .search-bar {
-    width: 100%;
-  }
-}
