@@ -312,6 +312,150 @@ header .icons a {
 #menu h2 {
   margin-bottom: 30px;
 }
+.menu-items .item,
+.special-cards .special-card {
+  display: flex;               /* make card horizontal */
+  flex-direction: row;         /* image left, content right */
+  gap: 20px;                   /* space between image and content */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 15px;
+  align-items: center;         /* vertically center content */
+}
+
+.menu-items .item img,
+.special-cards .special-card img {
+  width: 150px;               /* fixed width for image */
+  height: 150px;              /* fixed height */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.menu-items .item h3,
+.special-cards .special-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.menu-items .item p,
+.special-cards .special-card p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.menu-items .item .price,
+.special-cards .special-card .price {
+  font-weight: bold;
+  color: #ff4757;
+  margin-bottom: 10px;
+}
+
+.menu-items .item .add-cart,
+.special-cards .special-card .add-cart {
+  padding: 8px 15px;
+  background: #ff4757;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu-items .item .add-cart:hover,
+.special-cards .special-card .add-cart:hover {
+  background: #c02732;
+}
+.specials-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Sidebar: Categories List */
+.special-categories {
+  flex: 1; /* sidebar width */
+  max-width: 200px;
+}
+
+.special-categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.special-categories li {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #b75500;
+  cursor: default;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.special-categories li:hover {
+  background-color: #f7e6b3;
+}
+
+/* Right: Vertical stacked special cards */
+.special-cards {
+  flex: 3; /* remaining width */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual card layout */
+.special-card {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 15px;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.special-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.special-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.card-content .price {
+  font-weight: bold;
+  color: #ff4757;
+  margin-bottom: 10px;
+}
+
+.card-content .add-cart {
+  padding: 8px 15px;
+  background: #ff4757;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card-content .add-cart:hover {
+  background: #c02732;
+}
 .menu-items, .special-cards {
   display: flex;           /* use flexbox */
   flex-direction: column;  /* stack items vertically */
