@@ -462,43 +462,85 @@ header .icons a {
 =========================== */
 #contact {
   padding: 50px 30px;
+  background: #fff4f0;
+}
+
+#contact h2 {
   text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #ff4757;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.contact-info, .contact-form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  flex: 1 1 400px;
 }
 
 .contact-info p {
-  margin-bottom: 10px;
   font-size: 16px;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info iframe {
+  margin-top: 20px;
+  border-radius: 12px;
 }
 
 .contact-form {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contact-form input, .contact-form textarea {
-  padding: 10px;
-  border-radius: 8px;
+  padding: 12px;
+  border-radius: 12px;
   border: 1px solid #ccc;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  border-color: #ff4757;
+  box-shadow: 0 0 8px rgba(255, 71, 87, 0.3);
+}
+
+.contact-form textarea {
+  min-height: 120px;
   resize: none;
 }
 
 .contact-form button {
   padding: 12px;
   border-radius: 25px;
-  background: #ff4757;
+  background: linear-gradient(145deg, #ff4757, #ff7a7a);
   color: #fff;
   font-weight: bold;
+  font-size: 16px;
   transition: 0.3s;
 }
 
 .contact-form button:hover {
-  background: #c02732;
+  background: linear-gradient(145deg, #ff7a7a, #ff1c1c);
+  transform: scale(1.05);
 }
+
 
 /* =========================
    Footer
