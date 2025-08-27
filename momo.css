@@ -250,8 +250,7 @@ header .icons a {
   height: 100%;        
   object-fit: cover;    
   display: block;
-  margin: 0;            /* 👈 remove extra gap */
-}
+  margin: 0;            
 
 
 .overlay {
