@@ -85,24 +85,24 @@
     <div class="menu-items">
       <div class="item">
         <img src="Images/traditional-dumpling-momos-food-nepal-260nw-1147922261.jpg.webp" alt="Chicken Momo">
-        <h3>Chicken Momo</h3>
+        <h3>Chicken Momo <span class="badge">Hot</span></h3>
         <p>Steamed dumplings stuffed with chicken.</p>
         <span class="price">Rs. 150</span>
-        <button class="add-cart" data-item="Chicken Momo" data-price="150">Add to Cart</button>
+        <button class="add-cart">Add to Cart</button>
       </div>
       <div class="item">
         <img src="Images/image2.jpg" alt="Veg Momo">
-        <h3>Veg Momo</h3>
+        <h3>Veg Momo <span class="badge">Veg</span></h3>
         <p>Steamed dumplings filled with vegetables.</p>
         <span class="price">Rs. 120</span>
-        <button class="add-cart" data-item="Veg Momo" data-price="120">Add to Cart</button>
+        <button class="add-cart">Add to Cart</button>
       </div>
       <div class="item">
         <img src="Images/images.jpeg" alt="Fried Momo">
-        <h3>Fried Momo</h3>
+        <h3>Fried Momo <span class="badge">Crispy</span></h3>
         <p>Crispy fried dumplings with spicy sauce.</p>
         <span class="price">Rs. 180</span>
-        <button class="add-cart" data-item="Fried Momo" data-price="180">Add to Cart</button>
+        <button class="add-cart">Add to Cart</button>
       </div>
     </div>
   </section>
@@ -110,22 +110,45 @@
   <!-- ===== Specials Section ===== -->
   <section id="specials">
     <h2>🔥 Today’s Specials</h2>
-    <p>Try our chef’s recommendations!</p>
-    <ul>
-      <li>Buff Momo Platter – Rs. 200</li>
-      <li>Spicy Chilli Momo – Rs. 220</li>
-      <li>Cheese Momo – Rs. 250</li>
-    </ul>
+    <div class="special-cards">
+      <div class="special-card">
+        <img src="Images/special1.jpg" alt="Buff Momo Platter">
+        <h3>Buff Momo Platter</h3>
+        <span class="price">Rs. 200</span>
+      </div>
+      <div class="special-card">
+        <img src="Images/special2.jpg" alt="Spicy Chilli Momo">
+        <h3>Spicy Chilli Momo</h3>
+        <span class="price">Rs. 220</span>
+      </div>
+      <div class="special-card">
+        <img src="Images/special3.jpg" alt="Cheese Momo">
+        <h3>Cheese Momo</h3>
+        <span class="price">Rs. 250</span>
+      </div>
+    </div>
   </section>
 
-  <!-- ===== Reviews ===== -->
+  <!-- ===== Reviews Section ===== -->
   <section id="reviews">
     <h2>⭐ Customer Reviews</h2>
-    <div class="review"><p>“Best momos in town! Delivery was super fast.”</p><span>- Ramesh K.</span></div>
-    <div class="review"><p>“Loved the fried momos, crispy and tasty!”</p><span>- Anita P.</span></div>
+    <div class="review-slider">
+      <div class="review">
+        <p>“Best momos in town! Delivery was super fast.”</p>
+        <span>- Ramesh K.</span>
+      </div>
+      <div class="review">
+        <p>“Loved the fried momos, crispy and tasty!”</p>
+        <span>- Anita P.</span>
+      </div>
+      <div class="review">
+        <p>“Affordable and delicious! Highly recommend.”</p>
+        <span>- Sita M.</span>
+      </div>
+    </div>
   </section>
 
-  <!-- ===== Gallery ===== -->
+  <!-- ===== Gallery Section ===== -->
   <section id="gallery">
     <h2>📸 Our Gallery</h2>
     <div class="gallery-images">
@@ -135,12 +158,20 @@
     </div>
   </section>
 
-  <!-- ===== Contact ===== -->
+  <!-- ===== Contact Section ===== -->
   <section id="contact">
     <h2>📞 Contact Us</h2>
-    <p><i class="fa-solid fa-location-dot"></i> Malangwa, Sarlahi, Nepal</p>
-    <p><i class="fa-solid fa-phone"></i> +977-9827658721</p>
-    <p><i class="fa-solid fa-envelope"></i> momopalace@gmail.com</p>
+    <div class="contact-info">
+      <p><i class="fa-solid fa-location-dot"></i> Malangwa, Sarlahi, Nepal</p>
+      <p><i class="fa-solid fa-phone"></i> +977-9827658721</p>
+      <p><i class="fa-solid fa-envelope"></i> momopalace@gmail.com</p>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <!-- ===== Footer ===== -->
@@ -153,34 +184,6 @@
     </div>
   </footer>
 
-  <!-- Floating Cart Icon -->
-  <div class="cart-icon" id="cartBtn"><i class="fa fa-shopping-cart"></i></div>
-
-  <!-- Cart Modal -->
-  <div class="modal" id="cartModal">
-    <div class="modal-content">
-      <h3>Your Cart</h3>
-      <ul id="cartItems"></ul>
-      <p><strong>Total: Rs. <span id="cartTotal">0</span></strong></p>
-      <button onclick="closeCart()">Close</button>
-    </div>
-  </div>
-
-  <!-- Login Modal -->
-  <div class="modal" id="loginModal">
-    <div class="modal-content">
-      <h3>Login</h3>
-      <input type="text" placeholder="Email">
-      <input type="password" placeholder="Password">
-      <button>Login</button>
-      <button onclick="closeLogin()">Close</button>
-    </div>
-  </div>
-
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox">
-    <img src="" alt="Lightbox Image" id="lightboxImg">
-  </div>
 
   <script src="momo.js"></script>
 </body>
