@@ -17,7 +17,7 @@ body {
 .navbar-steps {
   display: flex;
   justify-content: center;
-  background-color:  rgb(199, 199, 199);
+  background-color:  #f2f2f4;
   padding: 10px 0;
   gap: 28px;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 .navbar-steps a:hover {
-  color: #ffcc00; /* highlight color on hover */
+  color: #ff4757; /* highlight color on hover */
 }
 
 .navbar-steps a.active {
@@ -474,8 +474,8 @@ header .icons a {
    Footer
 =========================== */
 footer {
-  background: #2f3542;
-  color: #fff;
+  background: #f2f2f4;
+  color: black;
   text-align: center;
   padding: 20px;
 }
@@ -485,14 +485,14 @@ footer .socials {
 }
 
 footer .socials a {
-  color: #fff;
+  color:#ff4757 ;
   margin: 0 8px;
-  font-size: 18px;
+  font-size: 28px;
   transition: color 0.3s;
 }
 
 footer .socials a:hover {
-  color: #ffeaa7;
+  color: blue;
 }
 
 /* =========================
