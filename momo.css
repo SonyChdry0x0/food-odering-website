@@ -17,13 +17,13 @@ body {
 .navbar-steps {
   display: flex;
   justify-content: center;
-  background-color: #f3ec8c;/* deep blue background */
+  background-color:  rgb(199, 199, 199);
   padding: 10px 0;
   gap: 28px;
 }
 
 .navbar-steps a {
-  color: #fff;  /* white text */
+  color: black;  /* white text */
   margin: 0 15px;
   text-decoration: none;
   font-weight: 500;
