@@ -247,9 +247,7 @@ header .icons a {
 
 #hero img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;   /* fills area while keeping aspect */
-  object-position: center; /* centers the crop */
+  height: 600px
 }
 
 .overlay {
