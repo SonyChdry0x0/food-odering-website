@@ -26,7 +26,7 @@ body {
   color: #ff4757;  /* white text */
   margin: 0 15px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
   transition: color 0.3s;
 }
 
