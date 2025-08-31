@@ -442,7 +442,12 @@ header .icons a {
   color: #ff4757;
   margin-bottom: 10px;
 }
-
+.list{
+  color:black;
+}
+list li{
+  color:black;
+}
 .card-content .add-cart {
   padding: 8px 15px;
   background: #ff4757;
