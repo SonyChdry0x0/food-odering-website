@@ -388,15 +388,14 @@ header .icons a {
 .special-categories li {
   padding: 10px;
   margin-bottom: 10px;
-  font-weight: bold;
-  color: #b75500;
+  color: black;
   cursor: default;
   border-radius: 6px;
   transition: background 0.3s;
 }
 
 .special-categories li:hover {
-  background-color: #f7e6b3;
+  color: gray;
 }
 
 /* Right: Vertical stacked special cards */
@@ -442,12 +441,7 @@ header .icons a {
   color: #ff4757;
   margin-bottom: 10px;
 }
-.list{
-  color:black;
-}
-list li{
-  color:black;
-}
+
 .card-content .add-cart {
   padding: 8px 15px;
   background: #ff4757;
